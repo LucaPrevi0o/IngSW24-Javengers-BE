@@ -40,4 +40,10 @@ Lista di know-how che può tornare utile in qualsiasi momento si decida di lavor
 
         -quando effettuate una commit attraverso VS-Code, vi si aprirà un file di testo con tante righe precedute da cancelletti (#); cancellando il carattere # davanti alla linea che rappresenta le modifiche al file in questione, state di fatto togliendo una riga di commento da un file che Git comprende come codice eseguibile, e che può interpretare come aggiornamento del file rispetto alla repository remota (non facendolo sarebbe come dire a Git di non aggiornare nulla); dopo averlo fatto, per confermare la commit, in alto a destra dovrebbe comparire un segno di spunta, che una volta cliccato vi chiederà di salvare la commit effettuata e, alla vostra risposta "Sì", procederà ad effettuare la commit sul sistema di Git
 
-    -effettuare il "push" delle modifiche effettuate (finchè non lo dite a Git, le modifiche rimangono solo sul vostro PC, e non si aggiornano in automatico - quando avete finito tutte le modifiche di lavoro, dal terzo menu effettuate la commit finale delle ultime modifiche e poi cliccate sul tasto "Sincronizza modifiche)
+    -effettuare il "push" delle modifiche effettuate (finchè non lo dite a Git, le modifiche rimangono solo sul vostro PC, e non si aggiornano in automatico - quando avete finito tutte le modifiche di lavoro, dal terzo menu effettuate la commit finale delle ultime modifiche e poi cliccate sul tasto "Sincronizza modifiche" per confermare il push)
+
+Con questo procedimento di lavoro, dovremmo essere tutti in grado di lavorare senza problemi su Git, tenendo ogni progresso e versione da conto senza dimenticarci nulla e senza sovrascrivere in maniera pericolosa i vecchi progressi
+
+--- --- ---
+
+Se ci sono ancora dubbi, problemi, o qualsiasi altro, chiedetemi pure senza alcun tipo di problemi - tenete conto del fatto che è la prima volta anche per me in cui utilizzo Git seriamente, quindi quello che vi ho descritto è un metodo completamente autodidattico che ho appreso questa mattina :) direi a questo punto buon lavoro a todos, spero che questa piccola guida vi sia stata d'aiuto (considerate che non è facile spiegare un sistema di icone con un file di testo XD)
