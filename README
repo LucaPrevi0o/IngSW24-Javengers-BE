@@ -1,0 +1,12 @@
+COME SINCRONIZZARE VISUAL STUDIO CODE CON GIT
+Breve tutorial sull'utilizzo di Git attraverso VS-Code / from "il vostro supermitico arch :)"
+
+-Fase 1: creare profilo su GitHub (se non si fa già parte dei due repository, dovrebbero esserci delle notifiche riguardanti l'aggiungersi al progetto). IMPORTANTE: creare il profilo attraverso la mail Unife, altrimenti l'invito non sarà presente e non sarà possibile lavorare contribuendo al progetto
+
+-Fase 2: Installare VS-Code (se non già fatto) e aprire l'applicazione (dovrebbe essere disponibile, e funzionante allo stesso modo, su Linux/Mac e su Windows - questo tutorial è stato pensato attraverso l'uso dell'applicazione da Linux/Mac, se ci saranno degli aggiornamenti rispetto a Windows perchè alcune cose funzionano diversamente ve lo farò sapere)
+
+-Fase 3: nel menu a sinistra, l'icona in alto permette di navigare nel file system a partire dalla cartella corrente, quella inferiore permette di cercare molte cose (per me è quasi inutile, se a qualcuno torna comoda tanto meglio), quella inferiore è quella fondamentale
+
+-Fase 3.5: se, avendo usato precedentemente VS-Code, avete ancora dei progetti aperti (vedete un albero di file, cartelle e sottocartelle aperto, ed eventualmente anche dei file co cui stavate lavorando in precedenza), dal menu di navigazione del file system (prima icona) fare clic destro all'interno dell'albero di navigazione e cliccare su "Rimuovi cartella dall'area di lavoro" per chiudere qualsiasi progetto (se VS-Code vi chiedesse di salvare il progetto in qualche file, non salvatelo: questo file vi salverebbe solamente un'impostazione dell'applicazione per aprire velocemente la cartella in cui stavate lavorando, ma secondo me è più semplice aprire nuovaente la cartella dall'applicazione in un secondo momento - a meno che abbiate veramente necessità di salvare questo progetto... allora fatelo tranquillamente XD)
+
+-Fase 4: dopo aver chiuso qualsiasi progetto aperto ()
