@@ -1,0 +1,51 @@
+**GUIDA SU COME INIZIALIZZARE GITHUB DA TERMINALE**
+
+
+1)Posizionarsi all'interno della $HOME directory
+
+2)Creare una cartella chiamata GitHub(o un qualsiasi nome scelto da voi, basta che vi ricordiate che serve a contenere tutti i vari progetti di github)
+
+3)posizionarsi all'interno della cartella e creare una nuova cartella per la repository desiderata
+
+4)all'interno dell'ultima cartella creata, utilizzare il comando "git init" per inizializzare la cartella
+
+5)la prima volta sarà necessario "loggarsi" via terminale. Per fare ciò utilizzare:
+	- git config --global user.name "vostrousername"
+	- git config --globa. user.email "vostraemail"
+
+6)ora bisogna collegare la repository all'interno della cartella creata:
+	- git remote add **Alias repository scelto da voi** linkdellarepository
+  per controllare che il tutto è andato a buon fine potete digitare "git remote -v". Questo vi permetterà di vedere quali repository sono
+  "linkati" alla cartella in cui siete
+
+7)settare l'access token (andrà fatto una sola volta).
+  Vi permetterà di utilizzare push e pull senza chiedervi ogni volta di inserire username e password o token.
+	-git remote set-url origin https://**vostrousername**:**tokenmandatodaqualcuno**@github.com/**linkrepository**
+
+8)come svolgere le varie operazioni di fetch, pull, add, commit e push
+	-FETCH: scarica il contenuto della repository senza alterare i file locali 
+		(utile quando vuoi vedere a cosa stanno lavorando altri senza scaricare roba e sicurmente ad altre cose che ora non so :D)
+			+ git fetch **nomealiasdatoinprecedenza**
+	
+	-PULL: scarica il contenuto della repository alterando anche i file locali
+			+ git pull **nomealiasdatoinprecedenza**
+
+	(**per i vari comandi, se si ha un solo alias per quella directory il nomealias non è necessario**)
+
+	-ADD: prepara i files per il commit
+			+git add .
+			(il . indica che vogliamo aggiungere e rilevare per il commit tutte le modifiche fatte ai file nella directory)
+
+	-COMMIT: serve a commentare gli aggiornamenti effettuati, per far capire ai collaboratori cosa hai modificato.
+		 **VA EFFETTUATO PRIMA DEL PUSH**, altrimenti nulla sarà commentato
+			+ git commit -m "**inserisciunmessaggio**"
+			(il -m serve ad indicare che vuoi inserire un messaggio per i cambiamenti effettuati)
+	
+	-PUSH: serve ad aggiornare il repository non locale.
+			+git push **nomealiasdatoinprecedenza**
+
+
+
+
+
+
