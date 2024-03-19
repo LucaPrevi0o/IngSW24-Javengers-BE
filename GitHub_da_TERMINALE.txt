@@ -22,7 +22,11 @@
   Vi permetterà di utilizzare push e pull senza chiedervi ogni volta di inserire username e password o token.
 	-git remote set-url origin https://**vostrousername**:**tokenmandatodaqualcuno**@github.com/**linkrepository**
 
-8)come svolgere le varie operazioni di fetch, pull, add, commit e push
+8)cambiare branch da master a main
+	-git switch main
+	(è necessario in quanto il master punta all'ultimo commit fatto e non a tutto)
+
+9)come svolgere le varie operazioni di fetch, pull, add, commit e push
 	-FETCH: scarica il contenuto della repository senza alterare i file locali 
 		(utile quando vuoi vedere a cosa stanno lavorando altri senza scaricare roba e sicurmente ad altre cose che ora non so :D)
 			+ git fetch **nomealiasdatoinprecedenza**
@@ -46,6 +50,14 @@
 
 
 
+**QUALCHE ALTRO COMANDO UTILE**
 
+- git log
+ (mostra a terminale tutte le modifiche apportate dai collaboratori compreso di data etc)
 
+- git config -l
+ (mostra tutti i dati che avete settato per il login e non solo! Utile se volete controllare se siete loggati correttamente)
+
+- vi **filedamodificare**
+ (molto utile per editare files da terminale. premere ESC e digitare in seguito :wq [letteralmente write quit] permette di uscire salvando)
 
