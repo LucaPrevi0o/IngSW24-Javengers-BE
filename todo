@@ -1,0 +1,18 @@
+- chiara ha trovato un bel template HTML-CSS da cui "prendere spunto"
+
+- dentro c'è un file HTML che viene automaticamente messo a schermo in maniera decente; ogni elemento è in un "div" che viene
+interpretato dal CSS con delle classi, quindi quando avremo le notifiche da mostrare dovremo fare in modo di utilizzare sempre
+una serie di "div" con le classi giuste in modo che il template CSS funzioni bene
+
+- questo è relativamente semplice da fare attraverso Javascript, ma è fattibile anche con Java (mi viene in mente una JSP per
+esempio, oppure Springboot magari avrà dei modi per fingersi JSP e trasformarsi in un Server per modificare l'HTML e fare la
+stessa cosa)
+
+- quello che ancora ci manca è un modo per far arrivare a Springboot/Java/quello che alla fine farà da server per avere un posto
+dove arrivano le notifiche le informazioni della notifica da mettere a schermo (nome profilo, testo della notifica, ecc...)
+
+- quando avremo capito come ottenere questa roba (che, se ho capito bene, dovremo far finta che arrivi da Mockoon), dobbiamo "solo"
+passarla ad una classe Java che restituisce in output l'HTML della pagina delle notifiche, e nel testo di ogni elemento HTML che
+corrisponde ad una notifica inserirci le informazioni ottenute
+
+- e poi non so perchè ma la parte del sistema di following dei profili tocca a noi :(
