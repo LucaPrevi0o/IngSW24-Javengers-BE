@@ -1,0 +1,10 @@
+classe Notifica: rappresenta il singolo oggetto con una notifica da mettere a schermo
+ogni Utente avrà al suo interno una lista (ArrayList<Notifica>) di tutte le notifiche ricevute
+
+    funzione display(String, Utente) che prende una stringa e la incapsula in un oggetto pronto ad essere visualizzato
+    ogni funzionalità avrà a disposizione la chiamata del metodo, alla quale passa una stringa contenente il mex da
+    visualizzare all'interno della notifica e il riferimento dell'utente che dovrà riceverla
+        l'implementazione del metodo dovrà prendere la stringa, incapsularla in un oggetto Notifica, e aggiungere alla
+        lista di notifiche dell'Utente la notifica appena creata
+
+    funzione remove(Notifica) che prende una specifica notifica nel profilo dell'utente e la rimuove dalla lista
