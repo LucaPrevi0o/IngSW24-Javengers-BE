@@ -1,0 +1,36 @@
+Oggetto del progetto
+    Gestione del sistema di notifiche
+    Gestione del following dei profili
+
+Distribuzione del team (ruoli)
+    Luca Previati (Arch)
+    Chiara Caselli (UXUI)
+    Giovanni Pio Caterino (Quality Assurance)
+    Wissal Kharbouchi (Data Analysis)
+
+Evidenze delle cerimonie
+    Utilizzo di Trello
+    Incontri via Meet e durante le lezioni
+
+Estrazione del disegno funzionale (da Miro)
+    non ho capito cosa sia :)
+
+Screenshot di Trello
+    da fare (meglio anche rifare il Trello più o meno da capo perchè al momento è un bordello)
+
+Test cases
+    ancora dobbiamo capire come farlo
+
+Indicazione del disegno architetturale scelto
+    questa è roba dell'arch
+
+Funzionalità implementate (elenco)
+    Metodo di display notifica
+    Metodo di aggiunta/rimozione following di profilo
+    altri metodi, dovremo più o meno listare tutti i metodi principali di ogni classe
+
+Dettaglio di una funzionalità
+    scegliere un metodo che è venuto particolarmente bene (o che almeno funziona vagamente) e spiegare come (perchè) funziona
+
+Feedback della vostra esperienza
+    meglio non specificarlo
