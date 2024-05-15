@@ -1,0 +1,47 @@
+ANALISI DEI REQUISITI - Gestione notifiche
+Javengers - Ingegneria del Software
+Chiara Caselli, Giovanni Pio Caterino, Wissal Kharbouchi, Luca Previati
+
+Esistono più tipi di notifica a seconda delle situazioni:
+	Notifiche relative a nuovi messaggi
+	Notifiche relative a nuovi eventi da organizzatori seguiti
+	Notifiche relative a nuove richieste di following
+	Notifiche relative a like sui commenti lasciati
+	Notifiche relative a pagamenti effettuati/ricevuti
+
+Ogni notifica è un'istanza della classe Notifica<T>, che rappresenta il singolo oggetto con una notifica da mettere a schermo
+Ogni istanza della classe Utente avrà al suo interno una lista (ArrayList<Notifica>) di tutte le notifiche ricevute ancora da leggere, insieme ad una lista
+di metodi che consentono di visualizzare, aggiungere e rimuovere elementi dalla lista notifiche
+
+L'oggetto Notifica<T>, dunque, contiene al suo interno un oggetto String, che rappresenta il messaggio incapsulato, un attributo boolean che identifica
+la visualizzazione della notifica (valore "true" quando la notifica viene aperta), un attributo generico di tipo T che identifica il tipo di notifica
+ricevuta (attraverso il riferimento alla classe chiamante Messaggio/Following/Commento...), un attributo di tipo Utente che identifica il mittente,
+e un attributo deleted che indica la cancellazione della Notifica dalla lista
+
+Tutto il sistema di gestione notifiche si appoggia su un database, contenente una tabella NOTIFICHE in cui sono presenti 4 attributi: un riferimento all'Utente
+che riceve la notifica, un riferimento all'Utente che manda la notifica, un riferimento al tipo di notifica e un riferimento alla stringa contenuta nella notifica
+
+La funzione sendNotifica(String, Utente, Utente) prende una stringa e la incapsula in un oggetto Notifica pronto ad essere visualizzato, passando anche il riferimento
+al mittente che invia la notifica; tale oggetto di tipo Notifica viene aggiunto alla lista di notifiche recenti dell'Utente specificato
+
+	Ogni funzionalità (gestione messaggi, like, commenti, following...) avrà a disposizione la chiamata del metodo, alla quale passa una stringa contenente
+	il messaggio da visualizzare all'interno della notifica, il riferimento dell'istanza Utente che dovrà riceverla e quello dell'Utente che invia la notifica
+    
+    	La Notifica viene aggiunta alla lista notifiche recenti solamente se corrisponde alle impostazioni delle notifiche relative all'Utente specificato
+	(se l'Utente ha disabilitato la ricezione notifiche per i messaggi, ad esempio, la chiamata del metodo per l'aggiunta di una notifica di nuovo
+	messaggio non aggiunge alcuna Notifica; questo viene implementato controllando il tipo generico della classe chiamante)
+    
+    	L'implementazione del metodo dovrà prendere la stringa, incapsularla in un oggetto Notifica, e aggiungerla alla lista di notifiche dell'Utente
+
+La funzione removeNotifica(Notifica) prende una specifica Notifica dalla lista notifiche dell'Utente e la rimuove
+
+	Quest'azione viene lanciata ogni volta che la notifica viene cancellata dalla lista, ma non viene lanciato alla visualizzazione direttamente;
+	solamente dopo aver visualizzato le notifiche sarà possibile selezionare solamente le notifiche già visualizzate per rimuoverle, o in alternativa
+	eliminarle prima della visualizzazione
+	
+La funzione viewNotifica(Notifica) prende una specifica Notifica dalla lista notifiche dell'Utente e la aggiorna allo stato di "visualizzato"
+
+	Tutte le notifiche appena aggiunte sono "non visualizzate"; quando l'Utente legge le notifiche recenti dalla lista, queste vengono aggiornate
+	allo stato di "visualizzato"
+	
+	E' possibile selezionare tutte le notifiche già visualizzate per rimuoverle dalla lista
