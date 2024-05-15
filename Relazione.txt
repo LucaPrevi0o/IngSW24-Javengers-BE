@@ -1,0 +1,55 @@
+•	OGGETTO DEL PROGETTO
+Gestione del sistema di notifiche
+ Gestione del following dei profili
+
+•	DISTRIBUZIONE DEL TEAM(RUOLI)
+    Luca Previati (Arch)
+    Chiara Caselli (UXUI)
+    Giovanni Pio Caterino (Quality Assurance)
+    Wissal Kharbouchi (Data Analysis)
+
+•	EVIDENZE DELLE CERIMONIE
+    Utilizzo di Trello
+    Incontri via Meet e durante le lezioni
+    Incontri in presenza fuori dall’orario di lezione
+
+
+
+•	ESTRAZIONE DEL DISEGNO FUNZIONALE (da Miro)
+
+
+•	SCRENSHOOT DI TRELLO
+Realizzazione della pagina principale delle notifiche con la lista completa di notifiche ricevute dove si può cliccare su una notifica per andare nella pagina relativa (la notifica verrà poi segnata come letta)
+
+Menu campanellina con le notifiche più recenti
+
+Pagina di impostazioni delle notifiche dove si può specificare che tipo di notifiche si vuole ricevere
+
+Pulsante "segui"
+
+Lista follower e lista follone
+
+•	TEST CASES
+
+
+
+
+
+•	INDICAZIONE DEL DISEGNO ARCHITETTURALE SCELTO
+             Scelta di una struttura monolitica(JSP,Java e MySql)
+
+•	FUNZIONALITA’ IMPLEMENTATE(ELENCO)
+La funzione sendNotifica(String, Utente, Utente) prende una stringa e la incapsula in un oggetto Notifica pronto ad essere visualizzato, passando anche il riferimento
+al mittente che invia la notifica; tale oggetto di tipo Notifica viene aggiunto alla lista di notifiche recenti dell'Utente specificato.
+La funzione removeNotifica(Notifica) prende una specifica Notifica dalla lista notifiche dell'Utente e la rimuove.Quest'azione viene lanciata ogni volta che la notifica viene cancellata dalla lista, ma non viene lanciato alla visualizzazione direttamente;
+solamente dopo aver visualizzato le notifiche sarà possibile selezionare solamente le notifiche già visualizzate per rimuoverle, o in alternativa eliminarle prima della visualizzazione.
+La funzione viewNotifica(Notifica) prende una specifica Notifica dalla lista notifiche dell'Utente e la aggiorna allo stato di "visualizzato".
+
+
+
+•	DETTAGLIO DI UNA FUNZIONALITA’
+
+
+
+•	FEEDBACK DELLA VOSTRA ESPERIENZA
+    meglio non specificarlo
